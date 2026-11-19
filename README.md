@@ -2,17 +2,6 @@
 
 A FastAPI chatbot that retrieves public DarGlobal and Wasalt content and answers questions using an OpenRouter model.
 
-## Features
-
-- Robots-aware public web scraper
-- Sitemap discovery and visible-text extraction
-- Local TF-IDF retrieval
-- OpenRouter chat completions
-- Source URL attribution
-- Responsive chat interface
-- Docker and Render deployment configuration
-- Health and behavior tests
-
 ## Setup
 
 1. Copy `.env.example` to `.env`.
