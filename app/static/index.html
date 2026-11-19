@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DarGlobal & Wasalt Assistant</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <div class="brand-mark">DW</div>
+      <div>
+        <h1>Property Intelligence</h1>
+        <p>DarGlobal & Wasalt public information</p>
+      </div>
+      <label class="model-picker">Model
+        <select id="model-select" aria-label="Free AI model">
+          <option value="openrouter/free">Auto free model</option>
+        </select>
+      </label>
+      <span class="status"><i></i> Online</span>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite">
+      <article class="message assistant">
+        <div class="avatar">AI</div>
+        <div class="bubble">
+          <p>Hello! Ask me about DarGlobal projects or Wasalt properties and listings.</p>
+          <div class="suggestions">
+            <button>What is DarGlobal?</button>
+            <button>Where does DarGlobal operate?</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <form id="chat-form" class="composer">
+      <input id="chat-input" aria-label="Message" maxlength="2000" placeholder="Ask about properties, locations, or developments…" autocomplete="off">
+      <button type="submit" aria-label="Send">➤</button>
+    </form>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
